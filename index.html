@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      padding: 0%;
+      margin: 0%;
+      /* outline: 1px solid red; */
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.6rem;
+
+    }
+
+    ul {
+      display: flex;
+      /* justify-content: space-between; */
+      /* padding: 1rem; */
+      list-style: none;
+    }
+
+    li {
+      margin-left: 1rem;
+    }
+
+    li a {
+      position: relative;
+      right: 20rem;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      color: black;
+    }
+
+    li img {
+      width: 2rem;
+    }
+
+    .all {
+      display: flex;
+      padding: 2rem 5rem;
+      align-items: center;
+    }
+
+    .shoe {
+      width: 65%;
+      margin-left: 5rem;
+      border-radius: 10px;
+    }
+
+    .logs {
+      display: flex;
+      margin-left: 5rem;
+    }
+
+    .log {
+      margin-right: 1.5rem;
+      border-radius: 7px;
+      width: 85px;
+    }
+
+    .log:hover {
+      border: 2px solid hsl(26, 100%, 55%);
+      background: hsl(0, 0%, 100%);
+      opacity: 0.3;
+    }
+
+    .fig {
+      display: flex;
+      /* margin-left: ; */
+      align-items: center;
+      margin-top: 0.8rem;
+    }
+
+    .datas {
+      display: flex;
+      margin-top: 1.3rem;
+
+    }
+
+    .data {
+      display: flex;
+      align-items: center;
+      background-color: hsl(223, 64%, 98%);
+    }
+
+    h2 {
+      color: hsl(26, 100%, 55%);
+      margin-bottom: 1rem;
+    }
+
+    span {
+      display: block;
+      color: hsl(0, 0%, 0%);
+    }
+
+    p {
+      width: 60%;
+      margin-top: 2.5rem;
+    }
+
+    .h3 {
+      font-size: 2rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+      background-color: hsl(25, 100%, 94%);
+      color: hsl(26, 100%, 55%);
+      margin-left: 1.4rem;
+      padding: 0.3rem;
+    }
+
+    .e {
+      margin-top: 0.6rem;
+      /* color: hsl(0, 9%, 19%); */
+      text-decoration: line-through;
+      color: rgba(78, 76, 76, 0.445);
+    }
+
+    .btn {
+      width: 5rem;
+      /* margin-left: 1.2rem; */
+      border: none;
+      padding: 0.6rem;
+      /* background-color: hsl(223, 64%, 98%); */
+      background-color: transparent;
+    }
+
+  .btns{
+    border-radius: 10px;
+    padding: 0.5rem 2rem;
+    margin-left: 1rem;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    border: none;
+  }
+svg{
+  margin-right: 10px;
+}
+hr{
+  width: 96%;
+  margin: auto;
+}
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="./images/logo.svg" alt="">
+    </div>
+
+    <div>
+      <nav>
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div>
+      <nav>
+        <ul>
+          <li><img src="./images/icon-cart.svg" alt=""></li>
+          <li><img src="./images/image-avatar.png" alt=""></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <hr>
+
+  <div class="all">
+    <div>
+      <div>
+        <img class="shoe" src="./images/image-product-1.jpg" alt="">
+      </div>
+
+      <div class="logs">
+        <img class="log" src="./images/image-product-1-thumbnail.jpg" alt="">
+        <img class="log" src="./images/image-product-2-thumbnail.jpg" alt="">
+        <img class="log" src="./images/image-product-3-thumbnail.jpg" alt="">
+        <img class="log" src="./images/image-product-4-thumbnail.jpg" alt="">
+      </div>
+    </div>
+
+    <div>
+      <h2>Sneaker Company</h2>
+      <h1>Fall Limited Edition <span>Sneakers</span> </h1>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+
+      <div>
+        <div class="fig">
+          <h3 class="h3">$125.00 </h3>
+          <h4>50%</h4>
+        </div>
+        <h3 class="e">$250.00</h3>
+      </div>
+
+      <div class="datas">
+        <div class="data">
+          <button class="btn"> <img src="./images/icon-minus.svg" alt=""></button>
+          <h5>0</h5>
+          <button class="btn"><img src="./images/icon-plus.svg"></button>
+        </div>
+        <button class="btns"><svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#fff" fill-rule="nonzero"/></svg>Add to cart</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
